@@ -1,0 +1,15 @@
+
+[
+    { "id": 1, "name": "L'Etranger", "price": "10€", "info": "great"    },
+    { "id": 2, "name": "Alice in Wonderland", "price": "12 €", "info": "great"
+    },
+    { "id": 3, "name": "1984", "price": "8 €", "info": "great"
+    },
+    { "id": 4, "name": "L'Art de la Guerre", "price": "13 €", "info": "great"
+    },
+    { "id": 5, "name": "Les Liaisons Dangereuses", "price": "9 €", "info": "great"
+    },
+    { "id": 6, "name": "Les Fleurs du Mal", "price": "5 €", "info": "great"
+    }
+   
+]

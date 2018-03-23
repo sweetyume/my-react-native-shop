@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 
-export default class Basket extends Component {
-    render() {
-        return (
-            <Text>Mon panier</Text>
-        )
-    }
+const Basket = () =>  {
+   return (
+       <View>
+       <Text>Panier</Text>
+       </View>
+   )
 }
+export default Basket;

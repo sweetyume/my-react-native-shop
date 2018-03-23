@@ -1,29 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text} from 'react-native';
-import { Button, List, ListItem, PricingCard } from 'react-native-elements';
+import { List, PricingCard, Card, Button } from 'react-native-elements';
 
-export default class Item extends Component {
-    render() {
-        return (
-            <View>
-                <List containerStyle={{ marginBottom: 30, width: 350 }}>
-                    <PricingCard
-                        color='#4f9deb'
-                        title={this.props.name}
-                        price={this.props.price}
-                        info={['une basket']}
-                        button={{ title: 'ADD'}}
-                    />
-                            {/* <ListItem
-                                roundAvatar
-                                avatar={{ uri: this.props.avatar_url }}
-                                key={this.props.id}
-                                title={this.props.name}
-                            /> */}
-                </List>
-            </View>
-
-
-        )
-    }
+const Item = (props) => {
+    return(
+        <View>
+        <List containerStyle={{ marginBottom: 15 }}>
+                <Card
+                    title={props.product.name}
+                    image={props.product.image}>
+                    <Text style={{ marginBottom: 10, textAlign: 'center'}}>
+                        {props.product.price}
+                    </Text>
+                    <Button
+                        backgroundColor='#03A9F4'
+                        buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
+                        title='Add' />
+                </Card>
+             {/* <PricingCard   
+                color='#4f9deb'
+                title={props.product.name}
+                price={props.product.price}
+                info={['']}
+                button={{ title: 'ADD'}}
+             /> */}
+        </List>
+        </View>
+    )
 }
+
+export default Item;
+
